@@ -12,7 +12,11 @@
 		0C9A06BB2796FE1400EA5376 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06BA2796FE1400EA5376 /* MainViewController.swift */; };
 		0C9A06C02796FE1600EA5376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A06BF2796FE1600EA5376 /* Assets.xcassets */; };
 		0C9A06C32796FE1600EA5376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A06C12796FE1600EA5376 /* LaunchScreen.storyboard */; };
-		0C9A06ED2797905600EA5376 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06EC2797905600EA5376 /* api.swift */; };
+		0C9A06ED2797905600EA5376 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06EC2797905600EA5376 /* Api.swift */; };
+		0C9A06F2279852E000EA5376 /* OnOffButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06F1279852E000EA5376 /* OnOffButton.swift */; };
+		0C9A06F72798998400EA5376 /* AlarmState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06F62798998400EA5376 /* AlarmState.swift */; };
+		0C9A06F927989D4800EA5376 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06F827989D4800EA5376 /* MainHeaderView.swift */; };
+		0C9A06FB2798B27100EA5376 /* AlarmStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06FA2798B27100EA5376 /* AlarmStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,11 @@
 		0C9A06C42796FE1600EA5376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C9A06C92796FE1700EA5376 /* Alarm BearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alarm BearTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9A06D32796FE1700EA5376 /* Alarm BearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alarm BearUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C9A06EC2797905600EA5376 /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		0C9A06EC2797905600EA5376 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		0C9A06F1279852E000EA5376 /* OnOffButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnOffButton.swift; sourceTree = "<group>"; };
+		0C9A06F62798998400EA5376 /* AlarmState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmState.swift; sourceTree = "<group>"; };
+		0C9A06F827989D4800EA5376 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		0C9A06FA2798B27100EA5376 /* AlarmStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		0C9A06E927978FEF00EA5376 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				0C9A06F4279898D700EA5376 /* Data */,
 				0C9A06B82796FE1400EA5376 /* SceneDelegate.swift */,
 				0C9A06B62796FE1400EA5376 /* AppDelegate.swift */,
 			);
@@ -145,7 +154,7 @@
 		0C9A06EB2797902D00EA5376 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0C9A06EC2797905600EA5376 /* api.swift */,
+				0C9A06EC2797905600EA5376 /* Api.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -162,6 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				0C9A06F0279790D500EA5376 /* Controller */,
+				0C9A06F827989D4800EA5376 /* MainHeaderView.swift */,
+				0C9A06F1279852E000EA5376 /* OnOffButton.swift */,
+				0C9A06FA2798B27100EA5376 /* AlarmStateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +184,22 @@
 				0C9A06BA2796FE1400EA5376 /* MainViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C9A06F4279898D700EA5376 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06F5279898DB00EA5376 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0C9A06F5279898DB00EA5376 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06F62798998400EA5376 /* AlarmState.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,10 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9A06FB2798B27100EA5376 /* AlarmStateView.swift in Sources */,
+				0C9A06F2279852E000EA5376 /* OnOffButton.swift in Sources */,
 				0C9A06BB2796FE1400EA5376 /* MainViewController.swift in Sources */,
 				0C9A06B72796FE1400EA5376 /* AppDelegate.swift in Sources */,
-				0C9A06ED2797905600EA5376 /* api.swift in Sources */,
+				0C9A06F927989D4800EA5376 /* MainHeaderView.swift in Sources */,
+				0C9A06ED2797905600EA5376 /* Api.swift in Sources */,
 				0C9A06B92796FE1400EA5376 /* SceneDelegate.swift in Sources */,
+				0C9A06F72798998400EA5376 /* AlarmState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
