@@ -9,13 +9,10 @@
 /* Begin PBXBuildFile section */
 		0C9A06B72796FE1400EA5376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06B62796FE1400EA5376 /* AppDelegate.swift */; };
 		0C9A06B92796FE1400EA5376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06B82796FE1400EA5376 /* SceneDelegate.swift */; };
-		0C9A06BB2796FE1400EA5376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06BA2796FE1400EA5376 /* ViewController.swift */; };
-		0C9A06BE2796FE1400EA5376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A06BC2796FE1400EA5376 /* Main.storyboard */; };
+		0C9A06BB2796FE1400EA5376 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06BA2796FE1400EA5376 /* MainViewController.swift */; };
 		0C9A06C02796FE1600EA5376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A06BF2796FE1600EA5376 /* Assets.xcassets */; };
 		0C9A06C32796FE1600EA5376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A06C12796FE1600EA5376 /* LaunchScreen.storyboard */; };
-		0C9A06CE2796FE1700EA5376 /* Alarm_BearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06CD2796FE1700EA5376 /* Alarm_BearTests.swift */; };
-		0C9A06D82796FE1700EA5376 /* Alarm_BearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06D72796FE1700EA5376 /* Alarm_BearUITests.swift */; };
-		0C9A06DA2796FE1700EA5376 /* Alarm_BearUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06D92796FE1700EA5376 /* Alarm_BearUITestsLaunchTests.swift */; };
+		0C9A06ED2797905600EA5376 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A06EC2797905600EA5376 /* api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +36,13 @@
 		0C9A06B32796FE1400EA5376 /* Alarm Bear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alarm Bear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9A06B62796FE1400EA5376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C9A06B82796FE1400EA5376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C9A06BA2796FE1400EA5376 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C9A06BD2796FE1400EA5376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C9A06BA2796FE1400EA5376 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0C9A06BF2796FE1600EA5376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9A06C22796FE1600EA5376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C9A06C42796FE1600EA5376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C9A06C92796FE1700EA5376 /* Alarm BearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alarm BearTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C9A06CD2796FE1700EA5376 /* Alarm_BearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm_BearTests.swift; sourceTree = "<group>"; };
 		0C9A06D32796FE1700EA5376 /* Alarm BearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alarm BearUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C9A06D72796FE1700EA5376 /* Alarm_BearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm_BearUITests.swift; sourceTree = "<group>"; };
-		0C9A06D92796FE1700EA5376 /* Alarm_BearUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm_BearUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C9A06EC2797905600EA5376 /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				0C9A06B52796FE1400EA5376 /* Alarm Bear */,
-				0C9A06CC2796FE1700EA5376 /* Alarm BearTests */,
-				0C9A06D62796FE1700EA5376 /* Alarm BearUITests */,
 				0C9A06B42796FE1400EA5376 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,32 +91,87 @@
 		0C9A06B52796FE1400EA5376 /* Alarm Bear */ = {
 			isa = PBXGroup;
 			children = (
-				0C9A06B62796FE1400EA5376 /* AppDelegate.swift */,
-				0C9A06B82796FE1400EA5376 /* SceneDelegate.swift */,
-				0C9A06BA2796FE1400EA5376 /* ViewController.swift */,
-				0C9A06BC2796FE1400EA5376 /* Main.storyboard */,
-				0C9A06BF2796FE1600EA5376 /* Assets.xcassets */,
-				0C9A06C12796FE1600EA5376 /* LaunchScreen.storyboard */,
 				0C9A06C42796FE1600EA5376 /* Info.plist */,
+				0C9A06E827978FC800EA5376 /* Shared */,
+				0C9A06E727978FC200EA5376 /* Sources */,
+				0C9A06E627978FBC00EA5376 /* Resources */,
 			);
 			path = "Alarm Bear";
 			sourceTree = "<group>";
 		};
-		0C9A06CC2796FE1700EA5376 /* Alarm BearTests */ = {
+		0C9A06E627978FBC00EA5376 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0C9A06CD2796FE1700EA5376 /* Alarm_BearTests.swift */,
+				0C9A06C12796FE1600EA5376 /* LaunchScreen.storyboard */,
+				0C9A06BF2796FE1600EA5376 /* Assets.xcassets */,
 			);
-			path = "Alarm BearTests";
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		0C9A06D62796FE1700EA5376 /* Alarm BearUITests */ = {
+		0C9A06E727978FC200EA5376 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0C9A06D72796FE1700EA5376 /* Alarm_BearUITests.swift */,
-				0C9A06D92796FE1700EA5376 /* Alarm_BearUITestsLaunchTests.swift */,
+				0C9A06EA2797900600EA5376 /* Scenes */,
+				0C9A06E927978FEF00EA5376 /* Application */,
 			);
-			path = "Alarm BearUITests";
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0C9A06E827978FC800EA5376 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06EB2797902D00EA5376 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0C9A06E927978FEF00EA5376 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06B82796FE1400EA5376 /* SceneDelegate.swift */,
+				0C9A06B62796FE1400EA5376 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0C9A06EA2797900600EA5376 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06EE2797906500EA5376 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0C9A06EB2797902D00EA5376 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06EC2797905600EA5376 /* api.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0C9A06EE2797906500EA5376 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06EF279790D000EA5376 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0C9A06EF279790D000EA5376 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06F0279790D500EA5376 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C9A06F0279790D500EA5376 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A06BA2796FE1400EA5376 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +280,6 @@
 			files = (
 				0C9A06C32796FE1600EA5376 /* LaunchScreen.storyboard in Resources */,
 				0C9A06C02796FE1600EA5376 /* Assets.xcassets in Resources */,
-				0C9A06BE2796FE1400EA5376 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9A06BB2796FE1400EA5376 /* ViewController.swift in Sources */,
+				0C9A06BB2796FE1400EA5376 /* MainViewController.swift in Sources */,
 				0C9A06B72796FE1400EA5376 /* AppDelegate.swift in Sources */,
+				0C9A06ED2797905600EA5376 /* api.swift in Sources */,
 				0C9A06B92796FE1400EA5376 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9A06CE2796FE1700EA5376 /* Alarm_BearTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9A06DA2796FE1700EA5376 /* Alarm_BearUITestsLaunchTests.swift in Sources */,
-				0C9A06D82796FE1700EA5376 /* Alarm_BearUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0C9A06BC2796FE1400EA5376 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C9A06BD2796FE1400EA5376 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C9A06C12796FE1600EA5376 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,9 +477,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Alarm Bear/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Alarm Bear";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,9 +504,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Alarm Bear/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Alarm Bear";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
